@@ -9,9 +9,9 @@ LABEL maintainer="arc427" \
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy static website files into Nginx's serving directory
-COPY src/main/resources/index.html /usr/share/nginx/html/index.html
-COPY src/main/resources/styles.css /usr/share/nginx/html/styles.css
-COPY src/main/resources/logo.jpeg /usr/share/nginx/html/logo.jpeg
+COPY docs/index.html /usr/share/nginx/html/index.html
+COPY docs/styles.css /usr/share/nginx/html/styles.css
+COPY docs/logo.jpeg /usr/share/nginx/html/logo.jpeg
 
 # Expose port 80 (Nginx default)
 EXPOSE 80
